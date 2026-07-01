@@ -1,3 +1,4 @@
+{
 # -*- coding: utf-8 -*-
 ################################################################################
 #
@@ -19,32 +20,39 @@
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
 ################################################################################
-{
+
     'name': "Vendor Bill Overpayment Guard",
+
     'summary': """
-        Prevents overpayment of vendor bills by enforcing strict payment validation.""",
+         Prevents overpayment of vendor bills by enforcing strict payment validation.""",
+
     'description': """
-        The Over Payment Blocking module ensures financial accuracy by preventing users from making payments that exceed
+         The Over Payment Blocking module ensures financial accuracy by preventing users from making payments that exceed
          the due amount on vendor bills. This helps businesses maintain proper accounting records and avoid accidental 
          overpayments. The module integrates seamlessly with Odoo’s accounting and payment workflows, enhancing 
          financial control and reducing errors.
     """,
+
     'author': 'Antler IT Solutions Pvt. Ltd.',
     'company': 'Antler IT Solutions Pvt. Ltd.',
     'maintainer': 'Antler IT Solutions Pvt. Ltd.',
     'website': "https://www.antlerit.net",
-    'version': '18.0.1.0.0',
+    'version': '19.0.1.0.0',
     'category': 'Purchases',
     'depends': ['base', 'account'],
+    'images': ['static/description/banner.jpg'],
+    # always loaded
     'data': [
+
     ],
     'css': [
-    ],
+        ],
+    # only loaded in demonstration mode
     'demo': [
+        # 'demo/demo.xml',
     ],
-    'images': ['static/description/banner.jpg'],
-    'license': 'AGPL-3',
     'installable': True,
-    'auto_install': False,
     'application': False,
+    'auto_install': False,
+    'license': 'LGPL-3',
 }
